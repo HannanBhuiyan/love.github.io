@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Relation</title>
+     <style>
+          .container {
+               text-align: center;
+               margin-top: 250px;
+          }
+          .title1 , .title2, .title3, h2 {
+               
+             color: red; 
+             font-weight: bold;
+          }
+          .title1 {
+               font-size: 60px; 
+          }
+          .title2 {
+               font-size: 70px; 
+          }
+          .title3 {
+               font-size: 70px;   
+          }
+          #button2 {
+               color: #fff;
+               background: #01033d;
+               padding: 20px 30px;
+               font-size: 19px;
+               border: none;
+               outline: none;
+               cursor: pointer;
+               margin-left: 15px;
+          }
+          #button1 {
+               color: #fff;
+               background: #01033d;
+               padding: 20px 30px;
+               font-size: 19px;
+               border: none;
+               outline: none;
+               cursor: pointer;
+               margin-right: 15px;
+          }
+     </style>
+</head>
+<body>
+     
+
+     <div class="container">
+          <div class="class_inner">
+               <div class="title1">
+                    <h2>Will You Be My Life Partner 💝? </h2>
+               </div>
+               <div class="title2">
+                    <h2>Opps!!! Kana Bondu 🖤 😃</h2>
+               </div>
+               <div class="title3">
+                    <h2>I Love You 💔 😘</h2>
+               </div>
+               <div class="button_group">
+                    <button id="button1">No</button>
+                    <button id="button2">Of Course, Yes!!!</button>
+                    
+               </div>
+          </div>
+     </div>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript"> 
+
+     $(".title1").show();
+     $(".title2").hide();
+     $(".title3").hide();
+
+
+     $("#button1").click(function(){
+          $(".title1").hide();
+          $(".title2").show();
+          $(".title3").hide();
+     })
+
+     $("#button2").click(function(){
+          $(".title1").hide();
+          $(".title2").hide();
+          $(".title3").show();
+     })
+
+ 
+
+  </script>
+
+
+</body>
+</html>
